@@ -6,7 +6,7 @@ const FooterPolicy = ({view675}) => {
 
     const policy = {
         title: ['Политика конфиденциальности', 'Политика обработки персональных данных'],
-        href: ['/Privacy_Policy.pdf', '/Privacy_Policy.pdf']
+        href: ['./doc/Privacy_Policy.pdf', './doc/Privacy_Policy.pdf']
     }
 
     const policyIndex = view675 ? 1 : 0
@@ -20,9 +20,9 @@ const FooterPolicy = ({view675}) => {
                 © 2021 OHCO Все права защищены.
             </div>
             <div className='footer__policy-text'>
-                <Link to={policyHref}>
+                <a href='./doc/Privacy_Policy.pdf'>
                     {policyTitle}
-                </Link>
+                </a>
             </div>
             <div className='footer__payment'>
                 <div className='footer__payment-master'>

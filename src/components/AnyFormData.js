@@ -58,7 +58,7 @@ const AnyFormData = ({mainColor, success, modal}) => {
                         color={mainColor}/>
                 </div>
                 <div className='form-any__conditions'>
-                    <a href='/' className='form-any__link'>
+                    <a href='./doc/Privacy_Policy.pdf' className='form-any__link'>
                         Я ознакомлен и согласен
                         &nbsp;
                     </a>

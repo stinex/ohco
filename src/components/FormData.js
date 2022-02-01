@@ -54,11 +54,11 @@ const FormData = ({customStyles = 'form'}) => {
                         checked={check}
                     />
                 </div>
-                <p className={`${customStyles}__text`}>
+                <a href="./doc/Privacy_Policy.pdf" className={`${customStyles}__text`}>
                     <span className={`white-color`}>Я ознакомлен и согласен</span> <br/>
                     с условиями политики обработки персональных <br/>
                     данных и конфиденциальности
-                </p>
+                </a>
             </div>
             <div className={`${customStyles}__submit`}>
                 <ButtonFillUI
