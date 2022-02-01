@@ -8,7 +8,7 @@ const HomeFeatures = ({content = 1}) => {
 
 
     return (
-        <section className='home-features'>
+        <section className='home-features' style='dispaly: none'>
                 {homeFeaturesArr.map((item, index) => {
 
                     // if (content !== index + 1) return null

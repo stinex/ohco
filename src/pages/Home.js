@@ -298,7 +298,9 @@ const Home = () => {
         {/*    elements={7}*/}
         {/*>*/}
         {/*    <HomeFeatures/>*/}
-        <HomeFeatures/>
+
+        {/* <HomeFeatures/> */}
+
         {/*</ChangeContent>*/}
         {/*<ChangeContent*/}
         {/*    trigger='gsap-technology'*/}
