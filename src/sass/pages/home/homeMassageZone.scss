@@ -1,0 +1,504 @@
+.background-massagezone {
+  background: linear-gradient(115.37deg, #DFDEDE 33.96%, rgba(184, 180, 180, 0.153298) 55.17%, rgba(177, 172, 172, 0) 60.88%), #F5F5F7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.home-massagezone {
+  position: relative;
+
+  &__wrapper {
+    padding: 87px 0 142px;
+  }
+
+  &__title {
+    @include SFProFont(55px, 700);
+    line-height: 60.5px;
+    color: $color-black;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    @include SFProFont(22px, 700);
+    line-height: 28px;
+    color: $color-gray;
+    margin-bottom: 50px;
+  }
+
+  &__desc {
+    width: 818px;
+  }
+
+  &__img {
+    max-width: 689px;
+    max-height: 1092px;
+    position: absolute;
+    right: 32px;
+    top: -95px;
+  }
+
+
+  &__list {
+    height: 443px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 0 110px 0;
+
+    & > *:nth-of-type(-n+4) {
+      margin-right: 30px
+    }
+
+    & > *:nth-of-type(4) {
+      margin-bottom: 0;
+    }
+
+    & > *:nth-of-type(8) {
+      margin-bottom: 50px;
+    }
+
+    & > *:nth-of-type(9) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item {
+    @include SFProFont(22px, 400);
+    line-height: 28px;
+    color: $color-gray;
+    margin-bottom: 45px;
+    //max-width: 360px;
+    width: 394px;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-color: $color-gray;
+      border-radius: 50%;
+
+      position: absolute;
+      top: 13px;
+      left: 14px;
+
+      width: 5px;
+      height: 5px;
+    }
+  }
+
+  &__item-text {
+    padding-left: 34px;
+  }
+
+  &__button {
+    width: 275px;
+    height: 50px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1800px) {
+  .home-massagezone {
+
+    &__img {
+      max-width: 659px;
+      max-height: 1062px;
+      right: 20px;
+      top: -83px;
+    }
+  }
+}
+
+
+@media (max-width: 1700px) {
+  .home-massagezone {
+    overflow: hidden;
+
+    &__img {
+      max-width: 448px;
+      max-height: 1092px;
+      position: absolute;
+      right: 0;
+      top: -93px;
+    }
+
+    &__list {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+
+@media (max-width: 1260px) {
+  .home-massagezone {
+    &__desc {
+      width: 720px;
+    }
+
+    &__item {
+      font-size: 20px;
+      width: 345px;
+
+      &::before {
+        left: 5.5px;
+      }
+    }
+
+    &__item-text {
+      padding-left: 16px;
+    }
+
+    &__img {
+      max-width: 428px;
+      top: -73px;
+    }
+  }
+}
+
+
+@media (max-width: 1150px) {
+  .home-massagezone {
+
+    &__desc {
+      width: 650px;
+    }
+
+    &__list {
+      & > *:nth-of-type(-n+4) {
+        margin-right: 0;
+      }
+    }
+
+    &__item {
+      font-size: 18px;
+      width: 310px;
+    }
+
+    &__img {
+      max-width: 398px;
+      //top: -63px;
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .home-massagezone {
+    &__wrapper {
+      padding: 70px 0;
+    }
+
+    &__img {
+      max-width: 345px;
+      height: 1121px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      & > img {
+        object-fit: cover;
+        object-position: 0;
+        height: 1121px;
+      }
+    }
+
+    &__title {
+      max-width: 504px;
+      font-size: 45px;
+      line-height: 49.5px;
+      margin-bottom: 20px;
+
+      & > br {
+        display: none;
+      }
+    }
+
+    &__subtitle {
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+
+    &__desc {
+      width: 100%;
+      padding-right: 347px;
+    }
+
+    &__list {
+      height: auto;
+      flex-wrap: nowrap;
+      margin-bottom: 50px;
+
+      & > * {
+        margin-bottom: 8px
+      }
+
+      & > *:nth-of-type(4) {
+        margin-bottom: 8px;
+
+        & > div {
+          max-width: none;
+        }
+      }
+
+      & > *:nth-of-type(8) {
+        margin-bottom: 0;
+      }
+
+      & > *:nth-of-type(9) {
+        margin-bottom: 8px;
+      }
+    }
+
+    &__item {
+      max-width: none;
+      width: 100%;
+      background-color: #FFFFFF;
+      border-radius: 10px;
+
+      &::before {
+        display: none;
+      }
+
+      &--1 {
+        order: 1;
+      }
+
+      &--2 {
+        order: 6;
+
+        & > div {
+          padding: 24px 25px 23px;
+        }
+      }
+
+      &--3 {
+        order: 4;
+
+        & > div {
+          padding: 35px 25px;
+        }
+      }
+
+      &--4 {
+        order: 2;
+      }
+
+      &--5 {
+        order: 5;
+      }
+
+      &--6 {
+        order: 7;
+
+        & > div {
+          //max-width: 293px;
+          padding: 24px 25px 23px;
+        }
+      }
+
+      &--7 {
+        order: 3;
+      }
+
+      &--8 {
+        order: 9;
+
+        & > div {
+          padding: 29px 25px 28px;
+        }
+      }
+
+      &--9 {
+        order: 8;
+
+        & > div {
+          padding: 29px 25px 28px;
+        }
+      }
+    }
+
+    &__item-text {
+      font-size: 16px;
+      line-height: 20px;
+      padding: 25px;
+
+      & > br {
+        display: none;
+      }
+
+      //max-width: 293px;
+    }
+
+    &__button {
+      width: 214px;
+      height: 42px;
+    }
+  }
+  .background-massagezone {
+    background: #F5F5F7;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-massagezone {
+    &__item {
+      &--6 {
+        & > div {
+          max-width: 293px;
+          padding: 24px 25px 23px;
+        }
+      }
+
+      &--1 {
+        & > div > br {
+          display: block;
+        }
+      }
+
+      &--5 {
+        & > div > br {
+          display: block;
+        }
+      }
+
+      &--7 {
+        & > div > br {
+          display: block;
+        }
+      }
+    }
+
+    &__item-text {
+      max-width: 293px;
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  .home-massagezone {
+    &__desc {
+      padding-right: 290px;
+    }
+
+    &__item-text {
+      font-size: 14px;
+    }
+
+    &__img {
+      max-width: 310px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home-massagezone {
+    &__wrapper {
+      padding: 27px 0 52px;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__desc {
+      padding-right: 0;
+    }
+
+    &__list {
+      margin-bottom: 30px;
+    }
+
+    &__item-text {
+      font-size: 16px;
+      max-width: none;
+    }
+
+    &__item {
+      &--6 {
+        & > div {
+          max-width: none;
+        }
+      }
+
+      &--1 {
+        & > div > br {
+          display: none;
+        }
+      }
+
+      &--5 {
+        & > div > br {
+          display: none;
+        }
+      }
+
+      &--7 {
+        & > div > br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .home-massagezone {
+    &__title {
+      font-size: 32px;
+      line-height: 38.4px;
+      margin-bottom: 17px;
+      max-width: 349px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 30px;
+      max-width: 220px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .home-massagezone {
+    &__item {
+      &--6 {
+        & > div {
+          max-width: 293px;
+        }
+      }
+
+      &--1 {
+        & > div > br {
+          display: block;
+        }
+      }
+
+      &--5 {
+        & > div > br {
+          display: block;
+        }
+      }
+
+      &--7 {
+        & > div > br {
+          display: block;
+        }
+      }
+    }
+
+    &__item-text {
+      max-width: 293px;
+    }
+
+    &__list {
+      & > *:nth-of-type(4) {
+        & > div {
+          max-width: 340px;
+        }
+      }
+    }
+  }
+
+}

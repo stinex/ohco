@@ -1,0 +1,702 @@
+.any-address {
+  display: flex;
+  margin: 80px 0 100px;
+
+  &-show {
+    margin: 93px 0 103px;
+  }
+
+  & > *:last-child {
+    margin-right: 0;
+  }
+
+  &__block {
+    background: linear-gradient(268.43deg, #1B1919 83.32%, rgba(37, 37, 37, 0) 123.67%);
+    box-shadow: inset 0 1px 30px rgba(219, 215, 215, 0.05);
+    border-radius: 50px;
+    min-width: 500px;
+    margin-right: 30px;
+    flex-grow: 1;
+
+    &--testdrive {
+      & > div {
+        padding: 70px 0 163px;
+
+        & > h4 {
+          margin-bottom: 77px;
+        }
+
+        & > div > div {
+          width: 190px;
+          height: 170px;
+
+          & > div {
+            width: 127px;
+            height: 127px;
+            bottom: -70px;
+            left: -65px;
+          }
+        }
+      }
+    }
+  }
+
+  &__left {
+    max-width: 500px;
+
+    &--shop {
+      padding: 60px 0 210px 0;
+    }
+
+    &--home {
+      padding: 54px 0 109px 0;
+    }
+  }
+
+
+  &__title {
+    @include SFProFont(45px, 700);
+    line-height: 58.5px;
+
+    &--shop {
+      margin: 0 0 127px 70px;
+    }
+
+    &--home {
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &__text-wrapper {
+    margin-left: 79px;
+  }
+
+  &__subtitle {
+    @include SFProFont(18px, 400);
+    line-height: 24px;
+    color: $color-gray;
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  &__icon {
+    &-shop {
+      width: 200px;
+      height: 180px;
+      position: relative;
+    }
+
+    &-home {
+      width: 233px;
+      height: 233px;
+      position: relative;
+      margin-left: 20px;
+    }
+  }
+
+  &__color {
+    width: 134px;
+    height: 134px;
+    position: absolute;
+    left: -70px;
+    bottom: -80px;
+  }
+
+  &__color-2 {
+    width: 126px;
+    height: 126px;
+    position: absolute;
+    left: -36px;
+    bottom: -55px;
+  }
+
+  &__right {
+    &--showrooms {
+      padding: 60px 0 68px 80px;
+    }
+
+    &--impressions {
+      padding: 70px 0 206px 71px;
+    }
+
+    &--format {
+      padding: 53px 0 116px 73px;
+    }
+  }
+
+  &__format-sub {
+    margin: 20px 0 55px;
+    @include SFProFont(18px, 400);
+    line-height: 24px;
+    color: $color-gray;
+    max-width: 421px;
+  }
+
+  &__item {
+    display: flex;
+
+    & > span {
+      @include SFProFont(18px, 400);
+      line-height: 24px;
+      color: $color-gray;
+    }
+  }
+
+  &__format-icon {
+    width: 30px;
+
+    &--1 {
+      width: 28px;
+      height: 28px;
+      margin-right: 22px;
+      margin-left: 3px;
+      margin-bottom: 28px;
+    }
+
+    &--2 {
+      width: 34px;
+      height: 23.77px;
+      margin-right: 19px;
+      margin-bottom: 29px;
+    }
+
+    &--3 {
+      width: 27px;
+      height: 29px;
+      margin-right: 23px;
+      margin-left: 3px;
+      margin-bottom: 23px;
+    }
+
+    &--4 {
+      width: 28px;
+      height: 28px;
+      margin-right: 24px;
+      margin-left: 2px;
+    }
+  }
+
+  &__try {
+    & > br {
+      display: none;
+    }
+
+    &-wrapper {
+      margin-top: 40px;
+
+      & > *:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @include SFProFont(18px, 400);
+    line-height: 24px;
+    color: $color-gray;
+    max-width: 512px;
+    margin-bottom: 20px;
+  }
+
+  &__info {
+    margin-top: 52px;
+  }
+
+  &__building {
+    @include SFProFont(22px, 700);
+    line-height: 28px;
+    margin-bottom: 15px;
+  }
+
+  &__time {
+    @include SFProFont(18px, 400);
+    line-height: 24px;
+    margin-bottom: 38px;
+    color: $color-gray;
+  }
+
+  &__address {
+    @include SFProFont(18px, 400);
+    line-height: 24px;
+    margin-bottom: 31px;
+    color: $color-gray;
+  }
+
+  &__contact {
+    @include SFProFont(22px, 700);
+    line-height: 28px;
+    margin-bottom: 4px;
+  }
+
+  &__contact-phone {
+    @include SFProFont(22px, 700);
+    line-height: 28px;
+    color: $main-color;
+    display: flex;
+  }
+
+  &__call {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+
+  }
+}
+
+@media (max-width: 1200px) {
+  .any-address {
+    & > *:first-child {
+      min-width: auto;
+    }
+
+    &__right {
+      &--showrooms {
+        padding-left: 60px;
+      }
+    }
+
+    &__title {
+      &--shop {
+        margin-left: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .any-address {
+    margin: 60px 0 100px;
+    flex-direction: column;
+
+    &-testdrive1 {
+      margin-bottom: 69px;
+    }
+
+    &-testdrive2 {
+      margin-bottom: 80px;
+    }
+
+    & > *:first-child {
+      margin-bottom: 30px;
+    }
+
+    &__wrapper {
+      width: 100%;
+      max-width: none;
+    }
+
+    &__block {
+      margin-right: 0;
+      border-radius: 20px;
+
+      &--testdrive {
+        & > div {
+          padding: 0;
+
+          & > h4 {
+            margin-bottom: 88px;
+          }
+
+          & > div > div {
+            width: 194px;
+            height: 173px;
+
+            & > div {
+              width: 129px;
+              height: 130px;
+              bottom: -65px;
+            }
+          }
+        }
+      }
+    }
+
+    &__left {
+      max-width: none;
+      padding: 0;
+    }
+
+    &__right {
+      &--impressions {
+        padding: 57px 0 56px 70px;
+      }
+
+      &--format {
+        padding: 58px 0 109px 70px;
+      }
+    }
+
+    &__format-sub {
+      margin: 19px 0 40px;
+      max-width: 418px;
+    }
+
+    &__format-wrapper {
+      & > *:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__item {
+      align-items: center;
+      margin-bottom: 25px;
+
+      & > span {
+        line-height: 24px;
+      }
+    }
+
+    &__format-icon {
+      width: 30px;
+
+      &--1 {
+        width: 28px;
+        height: 28px;
+        margin-right: 14px;
+        margin-left: 0;
+        margin-bottom: 0;
+      }
+
+      &--2 {
+        width: 29px;
+        height: 18px;
+        margin-left: 0;
+        margin-right: 12px;
+        margin-bottom: 0;
+      }
+
+      &--3 {
+        width: 27px;
+        height: 29px;
+        margin-right: 14px;
+        margin-left: 0;
+        margin-bottom: 0;
+      }
+
+      &--4 {
+        width: 28px;
+        height: 28px;
+        margin-right: 14px;
+        margin-left: 0;
+      }
+    }
+
+
+    &__try {
+      &-wrapper {
+        margin-top: 20px;
+      }
+
+      @include SFProFont(18px, 400);
+      margin-bottom: 10px;
+      line-height: 24px;
+      color: $color-gray;
+      max-width: 499px;
+
+      & > br {
+        display: none;
+      }
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 38.4px;
+
+      &--shop {
+        margin-left: 0;
+        margin-bottom: 88px;
+        padding: 58px 0 0 70px;
+      }
+
+      &--home {
+        margin-left: 0;
+        padding: 58px 0 0 0;
+        margin-bottom: 16px;
+
+        & > br {
+          display: none;
+        }
+      }
+    }
+
+    &__subtitle {
+      margin-bottom: 17px;
+      color: $color-white;
+    }
+
+    &__img {
+      padding-bottom: 125px;
+      margin-left: 0;
+
+      &-home {
+        padding-bottom: 114px;
+      }
+    }
+
+    &__icon-shop {
+      width: 194px;
+      height: 173px;
+    }
+
+    &__icon-home {
+      width: 215px;
+      height: 215px;
+    }
+
+    &__color {
+      width: 129px;
+      height: 130px;
+      left: -65px;
+      bottom: -65px;
+    }
+
+    &__color-2 {
+      width: 117px;
+      height: 117px;
+      left: -50px;
+      bottom: -45px;
+
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .any-address {
+    &__right {
+      &--impressions {
+        padding-left: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .any-address {
+    margin: 33px 0 60px;
+
+    & > *:first-child {
+      margin-bottom: 21px;
+    }
+
+    &__block {
+      min-width: auto;
+
+      &--testdrive {
+        & > div {
+          padding: 0;
+
+          & > h4 {
+            padding-top: 30px;
+            margin-bottom: 85px;
+          }
+
+          & > div > div {
+            width: 157px;
+            height: 140px;
+            margin-left: 20px;
+
+            & > div {
+              width: 105px;
+              height: 105px;
+              bottom: -50px;
+              left: -55px;
+            }
+          }
+
+          & > div {
+            padding-bottom: 129px;
+          }
+        }
+      }
+
+    }
+
+    &__title {
+      &--shop {
+        padding: 37px 30px 0;
+        margin-bottom: 84px;
+        max-width: 250px;
+      }
+
+      &--home {
+        padding: 30px 0 0 0;
+        margin-bottom: 16px;
+        max-width: 240px;
+      }
+    }
+
+    &__text-wrapper {
+      margin-left: 30px;
+    }
+
+    &__subtitle {
+      margin-bottom: 76px;
+      color: $color-gray;
+    }
+
+    &__icon-shop {
+      width: 157px;
+      height: 140px;
+    }
+
+    &__icon-home {
+      width: 189px;
+      height: 189px;
+      margin-left: 24px;
+    }
+
+    &__img {
+      padding-bottom: 123px;
+      &-home {
+        padding-bottom: 121px;
+      }
+    }
+
+    &__color {
+      width: 105px;
+      height: 105px;
+      left: -52px;
+      bottom: -50px;
+    }
+
+    &__color-2 {
+      width: 102px;
+      height: 101px;
+      left: -28px;
+      bottom: -40px;
+    }
+
+    &__right {
+      &--showrooms {
+        padding: 37px 30px 45px;
+      }
+
+      &--impressions {
+        padding: 30px 20px 30px 30px;
+      }
+      &--format {
+        padding: 30px 30px 32px;
+      }
+    }
+
+    &__format-sub {
+      font-size: 16px;
+      line-height: 20px;
+      & > br {
+        display: none;
+      }
+    }
+
+    &__item {
+      margin-bottom: 20px;
+      & > span {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+
+    &__try {
+      &-wrapper {
+        margin-top: 26px;
+      }
+
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__info {
+      margin-top: 35px;
+
+      & > *:nth-of-type(2) {
+        & > *:last-child {
+          margin-bottom: 37px;
+        }
+      }
+    }
+
+    &__building {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 18px;
+      max-width: 289px;
+    }
+
+    &__time {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 40px;
+    }
+
+    &__address {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 18px;
+      max-width: 289px;
+    }
+
+    &__contact {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 19px;
+
+      &-phone {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    &__call {
+      margin-right: 5px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .any-address {
+    &__br375 {
+      display: block;
+    }
+
+    &__item {
+      & > span {
+        max-width: 180px;
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .any-address {
+    &__try {
+      max-width: 270px;
+
+      & > br {
+        display: block;
+      }
+
+      &-wrapper {
+        & > *:last-child {
+          max-width: 265px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .any-address {
+    &__right {
+      &--showrooms {
+        padding-left: 20px;
+      }
+    }
+
+    &__building {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.background-showrooms {
+  background: linear-gradient(180deg, rgba(17, 17, 17, 0) 87.13%, rgba(17, 17, 17, 0.83) 100%),
+  url("../../../../public/image/ShowRooms/background/background-show-rooms-v2.jpg");
+
+  @include backgroundProperties(#010101);
+  background-size: cover;
+  z-index: 2;
+  position: relative;
+}
+
+.showrooms-main {
+  padding: 107px 0 20px;
+
+  &__wrapper {
+    max-width: 1116px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+
+    & > img {
+      position: relative;
+      z-index: 2;
+      object-fit: contain;
+    }
+  }
+
+  &__blur {
+    width: 400px;
+    height: 100px;
+    background: rgba(196, 196, 196, 0.7);
+    filter: blur(100px);
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    z-index: 0;
+    transform: translate(-50%, -30%);
+  }
+}
+
+
+.showrooms-map {
+  &__wrapper {
+    margin-bottom: 100px;
+    max-width: 1242px;
+    max-height: 500px;
+    height: 100%;
+  }
+  &__img {
+    border-radius: 50px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .showrooms-main {
+    padding-top: 163px;
+  }
+
+  .showrooms-map {
+    &__wrapper {
+      margin-bottom: 82px;
+      height: 300px;
+    }
+    &__img {
+      border-radius: 20px;
+      object-fit: cover;
+      object-position: 40% 0;
+    }
+  }
+  .showrooms-main {
+    &__wrapper {
+      position: static;
+    }
+    &__blur {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(17, 17, 17, 0.5) 87.13%, rgba(17, 17, 17, 0.83) 100%);
+      filter: none;
+      z-index: -1;
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .showrooms-main {
+    padding-top: 62px;
+  }
+}

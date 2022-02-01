@@ -1,0 +1,297 @@
+.background-home {
+  background: linear-gradient(91.9deg, rgba(0, 0, 0, 0.6) 19.55%, rgba(0, 0, 0, 0) 76.65%), linear-gradient(360deg, #010101 4.94%, rgba(0, 0, 0, 0) 18.31%), linear-gradient(180deg, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0) 19.21%),
+  url("../../../../public/image/Home/background/main/background-home.png");
+  @include backgroundProperties(#010101);
+  background-position: left 20px top;
+  position: relative;
+  &:after {
+    @include backgraundAfter;
+    background: linear-gradient(91.9deg, rgba(0, 0, 0, 0.6) 19.55%, rgba(0, 0, 0, 0) 76.65%),
+    linear-gradient(360deg, #010101 4.94%, rgba(0, 0, 0, 0) 18.31%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0) 19.21%);
+    z-index: 0;
+  }
+  min-height: 100vh;
+}
+
+.home-main {
+  //margin-top: 100px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+
+  &__text {
+    flex-shrink: 0;
+  }
+
+  &__company {
+    @include SFProFont(22px, 700);
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  &__title {
+    @include SFProFont(60px, 700);
+    line-height: 66px;
+    margin-bottom: 32px;
+  }
+
+
+  &__mobile-button {
+    display: none;
+  }
+
+  &__button {
+    max-width: 372px;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 187px;
+    &--mobile {
+      display: none;
+    }
+  }
+  &__icons {
+    display: flex;
+    margin-bottom: 111px;
+
+    & > *:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    margin-right: 70px;
+    display: flex;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  &__services {
+    @include SFProFont(16px, 600);
+    line-height: 22px;
+  }
+
+  &__image {
+    max-width: 619px;
+    max-height: 665px;
+    margin-top: 15px;
+    position: relative;
+
+    & > img {
+      object-fit: contain;
+    }
+  }
+
+  &__chair {
+    position: absolute;
+    right: 25px;
+    bottom: 33px;
+    text-align: right;
+  }
+  &__name {
+    @include SFProFont(22px, 400);
+    line-height: 28px;
+    margin-bottom: 6px;
+    color: $color-gray
+  }
+  &__price {
+    @include SFProFont(26px, 700);
+    line-height: 28px;
+    color: $color-white
+  }
+}
+
+@media (max-height: 810px) {
+  .home-main {
+    margin-top: 30px;
+    &__image {
+      max-height: 625px;
+    }
+  }
+}
+
+@media (min-width: 1960px) {
+  .background-home {
+    //min-height: auto;
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    flex-direction: column;
+    & > *:last-child {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 1920px) {
+  .background-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & > *:nth-of-type(2) {
+      flex-grow: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .home-main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .background-home {
+    background:
+    url("../../../../public/image/Home/background/main/background-home.png");
+    @include backgroundProperties(#010101);
+    position: relative;
+    background-size: auto 100%;
+    background-position: left -200px bottom;
+  }
+  .home-main {
+    //margin-top: 60px;
+  }
+}
+
+
+@media (max-width: 1250px) {
+  .home-main {
+    &__title {
+      font-size: 50px;
+    }
+    &__item {
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-main {
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+
+    &__icons {
+      display: none;
+    }
+
+    &__button {
+      display: none;
+      margin-bottom: 55px;
+      &--mobile {
+        display: block;
+      }
+    }
+
+    &__1024 {
+      display: none;
+    }
+
+    &__text {
+      text-align: center;
+    }
+
+    &__company {
+      font-size: 32px;
+      line-height: 38.4px;
+      margin-bottom: 15px;
+    }
+
+    &__title {
+      font-size: 55px;
+      line-height: 60.5px;
+      margin-bottom: 1px;
+    }
+
+    &__image {
+      margin-top: 0;
+      max-width: 513px;
+      max-height: 598px;
+    }
+
+    &__chair {
+      right: 71px;
+      bottom: 22px;
+    }
+
+    &__name {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 4px;
+    }
+    &__price {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .background-home {
+    background: url("../../../../public/image/Home/background/main/background-home-768.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &:after {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .background-home {
+    background-size: auto 107%;
+  }
+}
+
+@media (max-width: 550px) {
+  .home-main {
+    margin-top: 12px;
+    &__company {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+    &__title {
+      max-width: 250px;
+      font-size: 40px;
+      line-height: 44px;
+      margin-bottom: 0;
+    }
+    &__image {
+      max-width: 333px;
+      max-height: 395px;
+      height: 395px;
+      margin-bottom: 9px;
+    }
+
+    &__button {
+      width: 285px;
+      height: 42px;
+      margin-bottom: 34px;
+    }
+
+    &__free {
+      display: none;
+    }
+    &__chair {
+      right: 25px;
+      bottom: 4px;
+    }
+  }
+  .background-home {
+    background-size: auto 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .background-home {
+    background-position: right -100px bottom;
+    background-size: auto 100%;
+  }
+}

@@ -1,0 +1,185 @@
+.home-massage {
+  margin: 102px 0 54px;
+  display: flex;
+
+  &__img {
+    max-width: 760px;
+    max-height: 728px;
+
+    & > img {
+      object-fit: contain;
+    }
+  }
+
+  &__text {
+    margin: 70px 0 0 44px;
+    flex-shrink: 0;
+  }
+
+  &__title {
+    @include SFProFont(55px, 700);
+    line-height: 60.5px;
+    margin-bottom: 40px;
+  }
+  &__subtitle {
+    @include SFProFont(22px, 700);
+    line-height: 28px;
+    color: $color-gray;
+    margin-bottom: 50px;
+  }
+  &__button {
+    width: 324px;
+    height: 50px;
+  }
+
+  &__mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .home-massage {
+    justify-content: space-around;
+
+    &__text {
+      margin-left: 30px;
+    }
+
+    &__title {
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 30px;
+    }
+    &__subtitle {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    &__img {
+      max-width: 660px;
+      max-height: 628px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .background-home-massage {
+    background-size: auto 100%;
+    background-position: right -300px top -200px;
+  }
+
+  .home-massage {
+    margin: 90px 0 24px;
+    flex-direction: column-reverse;
+    &__text {
+      margin: 0;
+      padding-left: 43px;
+    }
+    &__title {
+      font-size: 45px;
+      line-height: 55px;
+      margin: 0 0 35px 0;
+
+      & > br {
+        display: none;
+      }
+
+      & > span > br {
+        display: none;
+      }
+    }
+    &__subtitle {
+      font-size: 22px;
+      margin-bottom: 50px;
+    }
+    &__button {
+      width: 336px;
+      height: 50px;
+      margin-bottom: 16px;
+    }
+    &__img {
+      max-width: 732px;
+      max-height: 652px;
+      padding-left: 8px;
+
+      & > img {
+        max-width: 732px;
+        max-height: 652px;
+      }
+
+    }
+    &__br1024 {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .home-massage {
+    &__title {
+      font-size: 40px;
+      line-height: 38.4px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home-massage {
+    margin: 25px 0 23px;
+    &__text {
+      padding-left: 0;
+    }
+    &__title {
+      font-size: 32px;
+      margin-bottom: 0;
+      & > span > br {
+        display: block;
+      }
+      & > br {
+        display: block;
+      }
+    }
+    &__subtitle {
+      font-size: 16px;
+      line-height: 20px;
+      color: $color-white;
+      margin-bottom: 30px;
+    }
+    &__button {
+      width: 263px;
+      height: 42px;
+      margin-bottom: 23px;
+    }
+    &__desktop {
+      display: none;
+    }
+    &__mobile {
+      display: block;
+    }
+    &__img {
+      padding-left: 0;
+    }
+
+    &__br1024 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .background-home-massage {
+    background: linear-gradient(359.35deg, #111111 0.6%, rgba(9, 9, 9, 0.554623) 6.86%, rgba(0, 0, 0, 0) 21.16%), linear-gradient(176.52deg, #111111 2.81%, rgba(0, 0, 0, 0) 30.11%), linear-gradient(96.88deg, #111111 -10.23%, rgba(17, 17, 17, 0) 26.17%), linear-gradient(0deg, rgba(4, 4, 4, 0.2), rgba(4, 4, 4, 0.2)), url("../../../../public/image/Home/background/background-home-massage.jpg");
+    background-position: center top;
+  }
+}
+
+@media (max-width: 370px) {
+  .home-massage {
+    &__subtitle {
+      font-size: 14px;
+      & > br {
+        display: none;
+      }
+    }
+  }
+}

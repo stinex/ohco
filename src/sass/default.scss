@@ -1,0 +1,292 @@
+//html {
+//  height: 100%;
+//}
+//
+//#root {
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: space-between;
+//  height: 100%;
+//}
+
+body::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $main-color;
+}
+
+
+body {
+  font-family: 'SFProDisplay';
+  font-weight: 700;
+  font-size: 22px;
+  color: $second-color;
+  background-color: #111111;
+  scroll-behavior: smooth;
+  //height: 100%;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+
+a {
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+button {
+  border: 0;
+  font-family: 'SFProDisplay' !important;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.body-hidden {
+  overflow: hidden;
+
+  //& > div > header {
+  //  visibility: hidden;
+  //}
+  //
+  //& > div > main {
+  //  & > * {
+  //    visibility: hidden;
+  //  }
+  //}
+  //
+  //& > div > footer {
+  //  visibility: hidden;
+  //}
+}
+
+.container {
+  @include backgroundCenter(1272px, 0 15px)
+}
+
+.more-container {
+  @include backgroundCenter(1334px, 0 15px)
+}
+
+.home-massage-container {
+  @include backgroundCenter(1334px, 0 15px)
+}
+
+.home-sympathy-container {
+  @include backgroundCenter(1415px, 0 15px)
+}
+
+.home-advantage-container {
+  @include backgroundCenter(1272px, 0 15px);
+  overflow: visible;
+}
+
+.main-color {
+  color: $main-color;
+}
+
+.white-color {
+  color: $color-white;
+}
+
+
+.default-input {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  border: 1px solid $color-gray;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  color: $color-white;
+  transition: .2s all linear;
+  background-color: rgba(0, 0, 0, 0);
+  &:focus {
+    border: 1px solid $color-white;
+    outline: none;
+  }
+  &::placeholder {
+    color: $color-gray;
+    font-weight: 400;
+  }
+}
+
+.default-input-modal {
+  color: #010101;
+
+  &:focus {
+    border: 1px solid $color-black;
+    outline: none;
+  }
+}
+
+.background-none {
+  background-color: rgba(0, 0, 0, 0);
+  color: $color-white;
+}
+
+.default-button {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: #BC8762;
+  border-radius: 42px;
+  min-width: auto;
+  text-transform: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: .2s all linear;
+  &:hover {
+    background-color: #CE9E7C;
+  }
+}
+
+.disabled-button {
+  background-color: $color-gray;
+  color: $color-white;
+  cursor: default;
+  &:hover {
+    background-color: $color-gray;
+  }
+}
+
+.scroll-top {
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+
+.animation-start {
+  height: 100vh;
+  transition: .2s all linear;
+}
+
+.animation-start {
+  min-height: 100%;
+  min-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  //visibility: visible !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > div {
+    & > div {
+      padding: 0;
+      & > section {
+        margin: 0;
+      }
+    }
+  }
+}
+
+//.animation-child {
+//  position: absolute;
+//  left: 50%;
+//  top: 50%;
+//  transform: translate(-50%, -50%);
+//}
+
+@media (max-width: 1500px) {
+  .home-sympathy-container {
+    max-width: none;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1440px) {
+  .home-advantage-container {
+    padding: 0 106px;
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .home-sympathy-container {
+    max-width: 1272px;
+    padding: 0 15px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .home-massage-container {
+    padding: 0;
+  }
+  .home-advantage-container {
+    padding: 0;
+  }
+}
+
+
+@media (max-width: 920px) {
+  .container {
+    padding: 0 39px;
+  }
+
+  .home-sympathy-container {
+    padding: 0 39px;
+  }
+
+  .showrooms-container {
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 675px) {
+  .container {
+    padding: 0 13px;
+  }
+
+  .showrooms-container {
+    padding: 0 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-massage-container {
+    padding: 0 13px;
+  }
+
+  .home-sympathy-container {
+    padding: 0;
+  }
+
+  button {
+    border: 0;
+    font-family: 'SFUIDisplay' !important;
+  }
+
+  .home-advantage-container {
+    padding: 0 31px;
+  }
+
+  .default-input {
+    font-size: 16px;
+  }
+}

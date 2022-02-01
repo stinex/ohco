@@ -1,0 +1,152 @@
+.director {
+
+  display: flex;
+  justify-content: space-between;
+  margin-right: 106px;
+  margin-top: 182px;
+
+  &__img {
+    min-width: 330px;
+    max-width: 530px;
+    max-height: 553px;
+    border-radius: 20px;
+
+    & > img {
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+  }
+
+  &__text {
+    margin-top: 138px;
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    min-width: 500px;
+  }
+
+  &__br {
+    display: block;
+  }
+
+  &__about {
+    @include SFProFont(18px, 400);
+    color: $color-gray;
+    margin-bottom: 20px;
+    line-height: 24px;
+  }
+
+  &__info {
+    margin-top: 16px;
+    align-self: flex-end;
+  }
+
+  &__name {
+    @include SFProFont(22px, 500);
+    color: #BC8762;
+    margin-bottom: 4px;
+    line-height: 28px;
+  }
+
+  &__position {
+    @include SFProFont(14px, 400);
+    color: $color-gray;
+    line-height: 18.2px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .director {
+    margin-top: 108px;
+    margin-right: 0;
+
+    &__text {
+      margin: 24px 0 0 30px;
+      width: 400px;
+      min-width: auto;
+    }
+
+    &__about {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__info {
+      margin-top: 13px;
+      margin-right: 37px;
+    }
+
+    &__name {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__br {
+      display: inline;
+    }
+    &__img {
+      width: auto;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .director {
+    height: 393px;
+    &__br768 {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 755px) {
+  .director {
+    &__br768 {
+      display: none;
+    }
+  }
+}
+
+
+@media (max-width: 700px) {
+  .director {
+    flex-direction: column;
+    height: auto;
+    margin-top: 60px;
+
+
+    &__img {
+      max-width: none;
+      max-height: none;
+    }
+
+    &__text {
+      margin-top: 20px;
+      width: 100%;
+      margin-left: 0;
+
+      & > *:nth-of-type(2) {
+        display: none;
+      }
+    }
+
+    &__name {
+      font-size: 14px;
+      line-height: 18.2px;
+      margin-bottom: 5px;
+    }
+
+    &__info {
+      margin-top: 6px;
+      margin-right: 0;
+    }
+
+    &__position {
+      font-size: 13px;
+      line-height: 16.9px;
+    }
+  }
+}

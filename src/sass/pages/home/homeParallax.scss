@@ -1,0 +1,213 @@
+.home-parallax {
+  padding-top: 109px;
+  height: 1080px;
+  position: relative;
+  background-color: #1A1A1B;
+
+
+  &__text {
+    position: relative;
+    z-index: 100;
+  }
+
+  &__main {
+    margin-left: 30px;
+    width: 1380px;
+    max-width: 1600px;
+    height: 1080px !important;
+    z-index: 1;
+  }
+
+  &__title {
+    @include SFProFont(55px, 700);
+    line-height: 60.5px;
+    margin-bottom: 40px;
+  }
+
+  &__subtitle {
+    @include SFProFont(22px, 700);
+    line-height: 28px;
+    color: $color-native-gray;
+    margin-bottom: 50px;
+  }
+
+  &__images {
+    left: 0;
+    top: 0;
+    position: absolute;
+
+    & > * {
+      position: absolute !important;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 1080px;
+    }
+
+    & > *:nth-of-type(1) {
+      z-index: 10;
+    }
+  }
+
+  &__leaflet-1 {
+    width: 700px;
+    height: 800px;
+    position: absolute;
+    left: -740px;
+    top: 280px;
+  }
+
+  &__leaflet-2 {
+    width: 900px;
+    height: 1260px;
+    position: absolute;
+    left: -220px;
+    top: -90px;
+  }
+
+  &__button {
+    max-width: 241px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .home-parallax {
+    &__leaflet-1 {
+      width: 700px;
+      height: 800px;
+      position: absolute;
+      left: -740px;
+      top: 280px;
+    }
+
+    &__leaflet-2 {
+      width: 900px;
+      height: 1260px;
+      position: absolute;
+      left: -220px;
+      top: -90px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-parallax {
+    padding-top: 50px;
+    height: 1024px;
+
+    &__title {
+      font-size: 45px;
+      line-height: 60px;
+      margin-bottom: 35px;
+    }
+
+    &__button {
+      max-width: 271px;
+    }
+
+    &__main {
+      margin-left: 0px;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    &__images {
+      & > *:nth-of-type(2) {
+        z-index: 10;
+      }
+    }
+
+
+    &__leaflet-1 {
+      width: 430px;
+      height: 624px;
+      position: absolute;
+      left: -445px;
+      top: 420px;
+    }
+
+    &__leaflet-2 {
+      width: 650px;
+      height: 1010px;
+      position: absolute;
+      left: -250px;
+      top: 50px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .home-parallax {
+    padding-top: 30px;
+    height: 762px;
+
+    &__title {
+      font-size: 32px;
+      line-height: 38.4px;
+      margin-bottom: 17px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 30px;
+    }
+
+    &__button {
+      max-width: 224px;
+      height: 42px;
+    }
+
+    &__main {
+      width: 500px !important;
+      height: 85% !important;
+      object-fit: cover;
+      max-width: 500px;
+      bottom: -40px;
+      z-index: 1;
+    }
+
+
+    &__leaflet-1 {
+      width: 370px;
+      height: 520px;
+      position: absolute;
+      left: -250px;
+      top: 260px;
+    }
+
+    &__leaflet-2 {
+      width: 250px;
+      height: 490px;
+      position: absolute;
+      //right: 0px;
+      left: auto;
+      top: 155px;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .home-parallax {
+    &__leaflet-1 {
+      left: -220px;
+    }
+    &__leaflet-2 {
+      right: -220px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .home-parallax {
+    &__leaflet-1 {
+      left: -190px;
+    }
+    &__leaflet-2 {
+      right: -190px;
+    }
+  }
+}

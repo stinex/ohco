@@ -1,0 +1,148 @@
+.home-rest {
+  margin: 118px auto 166px;
+  position: relative;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__title {
+    @include SFProFont(55px, 700);
+    line-height: 60.5px;
+    max-width: 536px;
+  }
+
+  &__track {
+    margin-top: 25px;
+    width: 396px;
+    height: 396px;
+    position: absolute;
+    @include positionAllCenter(50%, 50%);
+
+    & > img {
+      transition: .2s all linear;
+    }
+  }
+
+  &__icon-wrapper {
+    width: 396px;
+    height: 396px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 102px 0 77px;
+  }
+
+  &__icon {
+    &-chair {
+      width: 88px;
+      height: 106px;
+    }
+    &-battery {
+      width: 77px;
+      height: 125px;
+    }
+    &-time {
+      width: 89px;
+      height: 105px;
+    }
+  }
+
+  &__subtitle {
+    @include SFProFont(45px, 700);
+    line-height: 49.5px;
+    color: $color-gray;
+    max-width: 673px;
+
+    &--active {
+      color: $color-white;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .home-rest {
+    margin: 192px 0 188px;
+    &__title {
+      font-size: 45px;
+      line-height: 49.5px;
+    }
+    &__subtitle {
+      font-size: 32px;
+      line-height: 38.4px;
+    }
+    &__br920 {
+      display: block;
+    }
+
+    &__icon-wrapper {
+      width: 341px;
+      height: 341px;
+      margin: 64px 0 63px;
+    }
+
+    &__track {
+      margin-top: 11px;
+      width: 341px;
+      height: 341px;
+    }
+
+    &__icon {
+      &-battery {
+        width: 67px;
+        height: 107px;
+      }
+      &-time {
+        width: 91px;
+        height: 109px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home-rest {
+    margin: 103px 0 130px;
+
+    &__title {
+      font-size: 26px;
+      line-height: 29px;
+    }
+
+    &__subtitle {
+      font-size: 22px;
+      line-height: 28px;
+      max-width: 300px;
+    }
+
+    &__icon-wrapper {
+      width: 223px;
+      height: 223px;
+      margin: 61px 0 36px;
+    }
+
+    &__track {
+      margin-top: 14px;
+      width: 223px;
+      height: 223px;
+    }
+
+    &__icon {
+      &-chair {
+        width: 58px;
+        height: 70px;
+      }
+      &-battery {
+        width: 44px;
+        height: 70px;
+      }
+      &-time {
+        width: 60px;
+        height: 71px;
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.home-sympathy {
+  margin: 192px 0 191px;
+  &__item {
+    display: flex;
+  }
+
+  &__text {
+    margin: 240px 62px 0 0;
+    flex-shrink: 0;
+  }
+
+  &__title {
+    @include SFProFont(55px, 700);
+    line-height: 60.5px;
+  }
+  &__img {
+    position: relative;
+    max-width: 782px;
+    max-height: 840px;
+    & > img {
+      z-index: 1;
+      position: relative;
+      object-fit: contain;
+    }
+
+  }
+
+  &__illumination {
+    width: 20%;
+    height: 4%;
+    background-color: #FAEBC8;
+    position: absolute;
+    top: 53%;
+    transform: translateY(-55%);
+    z-index: 0;
+    transition: .2s all linear;
+
+    &--left {
+      left: 11%;
+      border-radius: 100% 0% 12% 88% / 0% 0% 100% 100%;
+      transform: rotate(-10deg);
+      //border-radius: 40% 40% 100% 70%;
+    }
+    &--right {
+      right: 10%;
+      transform: rotate(10deg);
+      border-radius: 100% 0% 82% 18% / 0% 0% 100% 100%
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .home-sympathy {
+    &__item {
+      justify-content: space-between;
+    }
+    &__text {
+      margin-top: 130px;
+      padding-left: 80px;
+      margin-right: 12px;
+    }
+
+    &__img {
+      max-width: 726px;
+      max-height: 696px;
+      margin-right: 62px;
+    }
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .home-sympathy {
+    &__text {
+      padding-left: 0;
+      margin-right: 12px;
+    }
+
+    &__title {
+      font-size: 45px;
+      line-height: 55px;
+    }
+
+    &__img {
+      margin-right: 0;
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .home-sympathy {
+    margin: 95px 0 96px;
+    &__item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    &__text {
+      margin: 0;
+    }
+    &__title {
+      margin-bottom: 113px;
+    }
+    &__img {
+      max-width: 636px;
+      max-height: 610px;
+    }
+  }
+}
+
+@media (max-width: 701px) {
+  .home-sympathy {
+    &__illumination {
+      top: 52%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home-sympathy {
+    margin: 85px 0;
+    &__text {
+      margin: 0;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 38.4px;
+      margin-bottom: 61px;
+    }
+    &__illumination {
+      top: 52%;
+    }
+  }
+}
+
+//@media (max-width: 450px) {
+//  .home-sympathy {
+//    &__illumination {
+//      height: 15px;
+//    }
+//  }
+//}
+
+@media (max-width: 350px) {
+  .home-sympathy {
+    &__title {
+      font-size: 28px;
+      line-height: 30px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@mixin backgroundProperties($color) {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: $color;
+}
+
+@mixin SFProFont($size, $weight) {
+  font-family: 'SFProDisplay';
+  font-weight: $weight;
+  font-size: $size;
+}
+
+@mixin SFPUiFont($size, $weight) {
+  font-family: 'SFUIDisplay';
+  font-weight: $weight;
+  font-size: $size;
+}
+
+@mixin positionCenter {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin positionAllCenter($top, $left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translate(-$top, -$left);
+}
+
+@mixin marginCenter($width, $height) {
+  width: $width;
+  height: $height;
+  margin: 0 auto;
+}
+
+@mixin backgroundCenter($max-width, $padding) {
+  max-width: $max-width;
+  width: 100%;
+  padding: $padding;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@mixin backgraundAfter() {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

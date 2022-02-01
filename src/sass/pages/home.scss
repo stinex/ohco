@@ -1,0 +1,100 @@
+.headerContent {
+  margin-top: 121px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  &__company-title {
+    @include SFProFont(22px, 700);
+    color: $main-color;
+  }
+  &__title {
+    @include SFProFont(60px, 700);
+    margin: 25px 0 32px;
+  }
+  &__subtitles {
+    max-width: 502px;
+    margin: 187px 0 111px;
+    display: flex;
+    justify-content: space-between;
+    &-item {
+      display: flex;
+    }
+    &-text {
+      @include SFProFont(16px, 600);
+      margin-left: 20px;
+    }
+  }
+  &__image {
+    width: 619px;
+    height: 665px;
+  }
+}
+
+.conveniences {
+  background-color: #111111;
+  display: flex;
+  position: relative;
+  padding-bottom: 166px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__track {
+    width: 395px;
+    height: 395px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image {
+    width: 395px;
+    height: 395px;
+    transition: .2s all linear;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+
+  &__title {
+    @include SFProFont(55px, 700);
+    text-align: center;
+    margin: 118px 0 101px;
+  }
+
+  &__icon {
+    text-align: center;
+  }
+
+  &__subtitle {
+    @include SFProFont(45px, 700);
+    text-align: center;
+    margin-top: 76px;
+    &--disabled {
+      color: $color-gray
+    }
+  }
+}
+
+.sympathy {
+  display: flex;
+  justify-content: space-between;
+  padding: 192px 0 0 0;
+  position: relative;
+  &__text {
+    margin-right: 12px;
+  }
+  &__title {
+    margin-top: 137px;
+    @include SFProFont(55px, 700)
+  }
+  &__img {
+    width: 725px;
+    height: 696px;
+    transition: .2s all linear;
+  }
+}

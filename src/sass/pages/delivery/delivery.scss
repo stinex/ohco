@@ -1,0 +1,184 @@
+.delivery {
+  //margin: 135px 0 112px;
+
+  &__wrapper {
+    padding: 80px 0;
+    display: flex;
+  }
+
+  &__img {
+    margin-top: 55px;
+    max-width: 489px;
+    max-height: 494px;
+    & > img {
+      object-fit: contain;
+    }
+  }
+
+  &__br {
+    display: block;
+  }
+
+
+  &__text {
+    padding: 81px 0 95px;
+    margin-left: 122px;
+    width: 530px;
+
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    @include SFProFont(55px, 700);
+    margin: 0 0 40px 0;
+    line-height: 60.5px;
+  }
+
+
+  &__icon {
+    width: 30px;
+    &--1 {
+      height: 24px;
+      margin-right: 20px;
+      & > svg {
+        width: 35px;
+        height: 24px;
+      }
+    }
+    &--2 {
+      margin-right: 20px;
+      margin-top: 10px;
+      & > svg {
+        width: 26px;
+        height: 26px;
+      }
+    }
+    &--3 {
+      & > svg {
+        width: 27px;
+        height: 29px;
+      }
+      margin-top: 10px;
+      margin-right: 22px;
+    }
+    &--4 {
+      margin-right: 20px;
+      & > svg {
+        width: 28.7px;
+        height: 28.7px;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    //align-items: center;
+    max-width: 400px;
+    margin-bottom: 25px;
+
+    &-title {
+      @include SFProFont(18px, 400);
+      color: $color-gray;
+      //margin-left: 20px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (max-width: 1070px) {
+  .delivery {
+    &__text {
+      margin-left: 60px;
+    }
+    &__title {
+      font-size: 45px;
+    }
+  }
+}
+
+
+@media (max-width: 920px) {
+  .delivery {
+    &__wrapper {
+      padding: 92px 0 91px;
+      flex-direction: column;
+    }
+
+    &__img {
+      align-self: center;
+      max-width: 505px;
+      max-height: 506px;
+      margin-top: 0;
+    }
+
+    &__text {
+      padding: 71px 0 0 0;
+      margin-left: 0;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 38.4px;
+    }
+
+    &__br {
+      display: inline;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .delivery {
+    &__wrapper {
+      padding: 48px 0 42px;
+    }
+
+    &__text {
+      margin-top: 60px;
+      padding: 0;
+      width: auto;
+
+      & > *:nth-of-type(2) {
+        & > .delivery__item-title {
+          max-width: 260px;
+          & > br {
+            display: none;
+          }
+        }
+      }
+
+    }
+    &__item {
+      margin-bottom: 30px;
+    }
+    &__img {
+      padding:0 18px 0 23px;
+    }
+    &__br {
+      display: block;
+    }
+
+    &__icon {
+      &--1 {
+        margin-right: 15px;
+        & > svg {
+          width: 34px;
+          height: 23px;
+        }
+      }
+      &--2 {
+        margin-right: 15px;
+        margin-top: 0;
+      }
+      &--3 {
+        margin-top: 0;
+        margin-right: 15px;
+      }
+      &--4 {
+        margin-right: 15px;
+      }
+    }
+  }
+}

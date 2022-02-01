@@ -1,0 +1,69 @@
+// Default styles
+@import "fonts";
+@import "variable";
+@import "mixins";
+
+// All pages styles
+@import "default";
+@import "backgrounds";
+@import 'anyPages/anyPages';
+@import "anyPages/header";
+@import "anyPages/form";
+@import "anyPages/footer";
+@import "anyPages/address";
+@import "anyPages/formAny";
+@import 'anyPages/anyAddress';
+@import 'anyPages/modal';
+@import 'anyPages/changeContent';
+@import "anyPages/swipers";
+@import 'pages/home/homeSliderChange';
+
+
+// Page styles
+@import "pages/home/homeMain";
+@import "pages/home/homeRest";
+@import "pages/home/homeVideo";
+@import "pages/home/homeMassage";
+@import "pages/home/homeSympathy";
+@import "pages/home/homeAdvantage";
+@import "pages/home/homeSlider";
+@import "pages/home/homeParallax";
+@import "pages/home/homeFeatures";
+@import "pages/home/homeTechnology";
+@import 'pages/home/homeForm';
+@import "pages/home/homeStone";
+@import "pages/home/homeSpace";
+@import "pages/home/homeComplex";
+@import "pages/home/homeDesigner";
+@import "pages/home/homeMaster";
+@import 'pages/home/homeMassageZone';
+@import 'pages/home/homeComfort';
+@import 'pages/home/homeDelivery';
+@import "pages/home/homeDreams";
+
+
+// Test Drive
+@import "pages/testDrive/testDriveMain";
+@import "pages/testDrive/testDrivePreparation";
+@import "pages/testDrive/testDriveSlider";
+@import "pages/testDrive/testDriveSwitch";
+@import "pages/testDrive/testDriveWork";
+@import "pages/testDrive/testDriveResult";
+
+// Showrooms
+@import "pages/showRooms/showroomsMain";
+@import "pages/showRooms/showRoomsDiller";
+
+// About
+@import "pages/about/home";
+@import "pages/about/director";
+@import "pages/about/designer";
+@import "pages/about/presentation";
+
+// delivery
+@import "pages/delivery/delivery";
+
+// Success
+@import "pages/success/success";
+
+@import "pages/404/404";

@@ -1,0 +1,111 @@
+.home-delivery {
+  &__wrapper {
+    padding: 100px 0;
+    text-align: center;
+  }
+  &__title {
+    @include SFProFont(32px, 700);
+    line-height: 40px;
+    margin-bottom: 50px;
+  }
+  &__flex {
+    display: flex;
+    max-width: 1242px;
+    justify-content: space-between;
+    & > *:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3333%;
+  }
+
+  &__icon {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 20px;
+  }
+  &__name {
+    @include SFProFont(18px, 700);
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    @include SFProFont(16px, 400);
+    line-height: 20.8px;
+    color: $color-gray;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-delivery {
+    &__wrapper {
+      padding: 80px 0
+    }
+    &__title {
+      margin-bottom: 69px;
+    }
+    &__flex {
+      flex-direction: column;
+      align-items: center;
+
+      & > *:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__item {
+      margin-bottom: 56px;
+      margin-right: 0;
+      width: auto;
+    }
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .home-delivery {
+    &__wrapper {
+      padding: 72px 0 52px;
+    }
+    &__title {
+      font-size: 22px;
+      line-height: 24px;
+      margin-bottom: 27px;
+    }
+    &__item {
+      margin-bottom: 48px;
+    }
+    &__icon {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 9px;
+    }
+    &__name {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 6px;
+    }
+    &__subtitle {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 18.2px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .home-delivery {
+    &__title {
+      font-size: 18px;
+    }
+    &__subtitle {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,444 @@
+@mixin backgroundFormLeft($left, $right) {
+  content: '';
+  position: absolute;
+  left: $left;
+  right: $right;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border-radius: 50px;
+}
+
+.form-any {
+  margin: 100px 0;
+  position: relative;
+
+
+  &__background {
+    background: linear-gradient(268.43deg, #1B1919 83.32%, rgba(37, 37, 37, 0) 123.67%);
+    box-shadow: inset 0 1px 30px rgba(219, 215, 215, 0.05);
+    border-radius: 50px;
+
+    &--about {
+      &::after {
+        @include backgroundFormLeft(0, auto);
+        background: bottom right no-repeat url("../../../public/image/AnyPage/Form/form-chair.png");
+      }
+    }
+
+    &--home {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      &::after {
+        @include backgroundFormLeft(auto, 0);
+        background: bottom left no-repeat url("../../../public/image/TestDrive/Form/form-chair.png");
+      }
+    }
+
+    &--showrooms {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      &::after {
+        @include backgroundFormLeft(auto, 0);
+        background: bottom left no-repeat url("../../../public/image/TestDrive/Form/form-chair2.png");
+      }
+    }
+  }
+
+  &__mobile-img {
+    display: none;
+  }
+
+  &__text {
+    padding: 84px 0 85px 107px;
+    position: relative;
+    z-index: 1;
+
+    &--revers {
+      padding: 91px 32px 91px 0;
+    }
+  }
+
+  &__title {
+    @include SFProFont(45px, 700);
+    line-height: 60px;
+    margin-bottom: 7px;
+    max-width: 498px;
+
+    &--solo {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__subtitle {
+    @include SFProFont(22px, 700);
+    line-height: 28px;
+    margin-bottom: 60px;
+    color: $color-gray;
+    max-width: 320px;
+  }
+
+  &__data {
+    width: 338px;
+  }
+
+  &__input {
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 18px
+  }
+
+  &__info {
+    display: flex;
+  }
+
+  &__check {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__info {
+    margin-bottom: 20px;
+  }
+
+  &__conditions {
+    @include SFProFont(14px, 400);
+    padding-top: 6px;
+    margin-left: 9px;
+    line-height: 17px;
+    color: $color-gray;
+    cursor: pointer;
+    //transition: .2s all linear;
+    //&:hover {
+    //  color: $color-white
+    //}
+  }
+
+  &__link {
+    cursor: default;
+    color: $color-white;
+    display: block
+  }
+
+  &__button {
+    height: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .form-any {
+    &__background {
+      &--home {
+        &::after {
+          background-size: 600px;
+        }
+      }
+
+      &--showrooms {
+        &::after {
+          background-size: 600px;
+        }
+      }
+    }
+    &__text--revers {
+      & > h2 {
+        max-width: 400px;
+        font-size: 36px;
+        line-height: 38.4px;
+      }
+    }
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+  .form-any {
+    margin: 80px 0 80px;
+
+
+    &__background {
+      border-radius: 20px;
+
+      &--about {
+        &::after {
+          border-radius: 20px;
+          background-size: 500px;
+        }
+      }
+
+
+      &--home {
+        border-radius: 20px;
+        //align-items: flex-start;
+
+        &::after {
+          //background: bottom right no-repeat url("../../../public/image/TestDrive/Form/form-chair768.png");
+          //transform: scale(-1, 1);
+          background-size: 500px;
+        }
+      }
+
+      &--showrooms {
+        border-radius: 20px;
+        //align-items: flex-start;
+
+        &::after {
+          //background: bottom right no-repeat url("../../../public/image/AnyPage/Form/form-chair-860.png");
+          //transform: scale(-1, 1);
+          background-size: 500px;
+        }
+      }
+    }
+
+
+    &__text {
+      padding: 54px 0 59px 60px;
+
+      &--revers {
+        padding: 60px 20px 60px 59px;
+
+        & > h2 {
+          max-width: 350px;
+          font-size: 32px;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 38.4px;
+      margin-bottom: 5px;
+
+      &--solo {
+        margin-bottom: 31px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 30px;
+      max-width: 230px;
+    }
+
+    &__data {
+      width: 250px;
+    }
+
+    &__checkbox {
+      padding: 3.5px;
+    }
+
+    &__conditions {
+      font-size: 12px;
+      padding-top: 5px;
+      margin-left: 4px;
+      line-height: 12px;
+    }
+
+    &__link {
+      display: inline;
+    }
+
+    &__input {
+      height: 42px;
+      font-size: 16px
+    }
+
+    &__button {
+      height: 42px;
+    }
+  }
+}
+
+
+@media (max-width: 880px) {
+  .form-any {
+    &__background {
+      &--home {
+        align-items: flex-start;
+        &::after {
+          border-radius: 20px;
+          background: bottom right no-repeat url("../../../public/image/TestDrive/Form/form-chair768.png");
+        }
+      }
+
+      &--showrooms {
+        align-items: flex-start;
+
+        &::after {
+          border-radius: 20px;
+          background: bottom right no-repeat url("../../../public/image/AnyPage/Form/form-chair-860.png");
+        }
+      }
+    }
+    &__text {
+      &--revers {
+
+        & > h2 {
+          max-width: 420px;
+          font-size: 32px;
+        }
+      }
+    }
+    &__br768 {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .form-any {
+    &__background {
+      &--about {
+        &::after {
+          background: bottom right no-repeat url("../../../public/image/AnyPage/Form/form-chair-860.png");
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .form-any {
+    &__text {
+      &--revers {
+        padding-left: 30px;
+        & > h2 {
+          font-size: 28px;
+          max-width: 320px;
+        }
+      }
+    }
+    &__br768 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .form-any {
+    &__text {
+      padding-left: 37px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .form-any {
+    margin: 158px 0 60px;
+
+    &__background {
+      background: #262626;
+
+      &--about {
+        &::after {
+          display: none;
+        }
+      }
+
+      &--home {
+        margin-bottom: 80px;
+        &::after {
+          display: none;
+        }
+      }
+
+      &--showrooms {
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    &__br768 {
+      display: block;
+    }
+
+    &__br375 {
+      display: block;
+    }
+
+    &__text {
+      padding: 131px 0 44px;
+      &--revers {
+        padding: 119px 0 40px;
+        margin: 0 auto;
+        & > h2 {
+          margin: 0 auto 20px;
+          font-size: 32px;
+          max-width: 240px;
+          text-align: left;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 38.4px;
+      margin-bottom: 5px;
+      text-align: center;
+      max-width: none;
+    }
+
+    &__subtitle {
+      margin: 0 auto 40px;
+      text-align: center;
+
+    }
+
+    &__data {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 52px 0 47px;
+    }
+
+    &__mobile-img {
+      display: block;
+      position: absolute;
+      top: -95px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      & > img {
+        width: 255px;
+        height: 197px;
+      }
+    }
+
+    &__blur {
+      width: 265px;
+      height: 60px;
+      position: absolute;
+      top: 100px;
+      z-index: -1;
+
+      background: #F9F9F9;
+      opacity: 0.4;
+      filter: blur(50px);
+    }
+  }
+}
+
+
+@media (max-width: 360px) {
+  .form-any {
+    &__title {
+      font-size: 28px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+    }
+
+    &__data {
+      padding: 0 25px;
+    }
+  }
+}

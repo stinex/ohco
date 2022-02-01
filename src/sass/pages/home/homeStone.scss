@@ -1,0 +1,399 @@
+.home-stone {
+
+  & > div {
+    background-position: left top;
+  }
+
+  &__wrapper {
+    padding: 127px 0 214px;
+    display: flex;
+  }
+
+  &__text {
+    padding-top: 168px;
+    margin-right: 88px;
+  }
+  &__title {
+    @include SFProFont(55px, 700);
+    line-height: 60.5px;
+    margin-bottom: 40px;
+  }
+  &__subtitle {
+    @include SFProFont(22px, 700);
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+  &__img-wrapper {
+    max-width: 652px;
+    max-height: 739px;
+    position: relative;
+  }
+  &__tooltip {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    &--1 {
+      top: 24.5%;
+      right: 6%;
+    }
+
+    &--2 {
+      align-items: flex-end;
+      top: 42%;
+      left: 1%;
+    }
+
+    &--3 {
+      top: 49%;
+      right: 23%;
+    }
+
+    &--4 {
+      left: 10%;
+      bottom: 5%;
+    }
+  }
+
+  &__plus {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+
+    @include SFProFont(18px, 400);
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content {
+    margin-top: 5px;
+    width: 167px;
+    height: 84px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+
+    @include SFProFont(14px, 400);
+    line-height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #010101;
+    text-align: center;
+
+    & > span {
+      max-width: 138px;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .home-stone {
+    & > div {
+      background: url("../../../../public/image/Home/HomeStone/home-stone-1440.jpg");
+      //background-position: center bottom;
+    }
+  }
+}
+
+@media (max-width: 1235px) {
+  .home-stone {
+    &__wrapper {
+      justify-content: space-between;
+    }
+    &__text {
+      padding-top: 14%;
+      margin-right: 0;
+      flex-shrink: 0;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-stone {
+
+    & > div {
+      background: linear-gradient(4.49deg, #111111 7.61%, rgba(9, 9, 9, 0.554623) 15.87%, rgba(0, 0, 0, 0) 34.74%), linear-gradient(176.52deg, #111111 2.81%, rgba(0, 0, 0, 0) 30.11%), linear-gradient(96.88deg, #111111 -10.23%, rgba(17, 17, 17, 0) 26.17%), linear-gradient(0deg, rgba(4, 4, 4, 0.2), rgba(4, 4, 4, 0.2)), url("../../../../public/image/Home/HomeStone/home-stone-768.jpg");
+      background-size: 100% 100%;
+      background-position: top left;
+    }
+
+    &__wrapper {
+      flex-direction: column;
+      padding: 23px 0 35px;
+    }
+    &__text {
+      padding-top: 0;
+    }
+    &__title {
+      font-size: 45px;
+      margin-bottom: 0;
+      & > span {
+        display: block;
+        & > br {
+          display: none;
+        }
+      }
+    }
+    &__img-wrapper {
+      max-width: 595px;
+      max-height: 671px;
+      margin-bottom: 9px;
+      transform: scale(-1, 1);
+      align-self: center;
+      & > img {
+        max-width: 595px;
+        max-height: 671px;
+      }
+    }
+
+    &__tooltip {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+
+      &--1 {
+        top: 29%;
+        right: 10.5%;
+        //& > *:first-child {
+        //  opacity: 0;
+        //}
+      }
+
+      &--2 {
+        align-items: flex-end;
+        top: 42.5%;
+        left: -2.8%;
+      }
+
+      &--3 {
+        top: 49.5%;
+        right: 24.5%;
+      }
+
+      &--4 {
+        left: 4.7%;
+        bottom: 2.2%;
+      }
+    }
+
+    &__plus  {
+      width: 28px;
+      height: 28px;
+    }
+
+    &__content {
+      transform: scale(-1, 1);
+      width: 158px;
+      height: 79px;
+    }
+
+    &__subtitle {
+      font-size: 22px;
+      margin-bottom: 10px;
+      max-width: 570px;
+
+      & > br {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .home-stone {
+    & > div {
+      background: url("../../../../public/image/Home/HomeStone/home-stone-376.jpg");
+      background-size: auto 100%;
+    }
+
+    & > div {
+      padding: 18px 0 13px;
+    }
+
+    & > div > div {
+      padding-left: 0;
+    }
+
+    &__title {
+      padding-left: 13px;
+      font-size: 32px;
+      line-height: 38.4px;
+    }
+
+    &__img-wrapper {
+      margin-bottom: 1px;
+    }
+
+    &__wrapper {
+      & > *:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__subtitle {
+      padding-left: 13px;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
+
+    &__tooltip {
+      &--1 {
+        top: 29.5%;
+        right: 13%;
+        & > div:last-child {
+          padding: 11px 0;
+        }
+      }
+
+      &--2 {
+        align-items: flex-end;
+        top: 41%;
+        left: -3%;
+        & > div:last-child {
+          padding: 18px 0;
+        }
+      }
+
+      &--3 {
+        top: 48.7%;
+        right: 23.5%;
+        & > div:last-child {
+          padding: 11px 0;
+        }
+      }
+
+      &--4 {
+        left: 5%;
+        bottom: 4.8%;
+        & > div:last-child {
+          padding: 19px 0;
+        }
+      }
+    }
+
+
+    &__plus  {
+      width: 17px;
+      height: 17px;
+      font-size: 16px;
+    }
+
+    &__content {
+      margin-top: 1px;
+      width: 126px;
+      height: auto;
+      line-height: 15px;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .home-stone {
+    &__tooltip {
+      &--1 {
+        top: 30.5%;
+        right: 10%;
+      }
+
+      &--2 {
+        align-items: center;
+        top: 42%;
+        left: 7%;
+      }
+
+      &--3 {
+        //top: 48.7%;
+        right: 20.5%;
+      }
+
+      &--4 {
+        left: 7%;
+        bottom: 2%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 375px) {
+  .home-stone {
+    &__wrapper {
+      padding: 0;
+    }
+
+    &__img-wrapper {
+      max-width: 353px;
+      max-height: 395px;
+      & > img {
+        max-height: 395px;
+      }
+    }
+
+    &__tooltip {
+      &--1 {
+        top: 28.8%;
+        right: 3.7%;
+      }
+
+      &--2 {
+        //align-items: flex-end;
+        top: 41%;
+        left: 5%;
+      }
+
+      &--3 {
+        top: 48%;
+        right: 15.5%;
+      }
+
+      &--4 {
+        left: 4%;
+        bottom: 0%;
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .home-stone {
+    &__content {
+      width: 100px;
+      height: 50px;
+      font-size: 11px;
+    }
+
+    &__tooltip {
+      &--1 {
+        right: 5%;
+      }
+
+      &--2 {
+        top: 40%;
+        left: -3%;
+      }
+
+      &--3 {
+        top: 46%;
+        right: 20%;
+      }
+
+      &--4 {
+        left: 4.5%;
+        bottom: 4%;
+      }
+    }
+  }
+}

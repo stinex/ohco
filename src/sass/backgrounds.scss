@@ -1,0 +1,102 @@
+.background-home-massage {
+  background: url("../../public/image/Home/background/background-home-massage.jpg");
+
+  //@include backgroundProperties(#010101);
+  @include backgroundProperties(#111111);
+  background-position: left bottom;
+}
+
+.background-home-sympathy {
+  background: linear-gradient(355.17deg, #111111 3.98%, rgba(17, 17, 17, 0) 34.91%),
+  linear-gradient(180deg, #111111 7.11%, rgba(17, 17, 17, 0) 27.92%),
+  url("../../public/image/Home/background/background-sympathy.jpg");
+
+  @include backgroundProperties(#111111);
+  background-size: cover;
+}
+
+.background-home-white {
+  background-color: #F5F5F7;
+}
+
+
+.background-home-black {
+  background-color: #111111;
+}
+
+
+.background-home-parallax {
+  background: url("../../public/image/Home/HomeParallax/HomeParallax.jpg");
+  @include backgroundProperties(#1A1A1B);
+}
+
+.background-home-features {
+  background: url("../../public/image/Home/HomeFeatures/HomeFeaturesBackground.jpg");
+  @include backgroundProperties(#111111);
+}
+
+
+
+.background-testdrive-slider {
+  background: rgba(0, 0, 0, 0.4)
+  url("../../public/image/TestDrive/backgrounds/testingdrive-slider-background.jpg");
+  @include backgroundProperties(#111111);
+
+  & > .container {
+    overflow: visible;
+  }
+}
+
+@media (max-width: 1440px) {
+  .background-testdrive-slider {
+    background: url("../../public/image/TestDrive/backgrounds/testingdrive-slider-background-1440.jpg");
+    @include backgroundProperties(#111111);
+    background-size: cover;
+    background-position: left 80% top 0;
+  }
+
+  .background-home {
+    background: linear-gradient(91.9deg, rgba(0, 0, 0, 0.6) 19.55%, rgba(0, 0, 0, 0) 76.65%),
+    linear-gradient(360deg, #010101 4.94%, rgba(0, 0, 0, 0) 18.31%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0) 19.21%),
+    url("../../public/image/Home/background/main/background-home-1440.jpg");
+    @include backgroundProperties(#010101);
+    background-position: left 25px top;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .background-home-massage {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 880px) {
+  .background-testdrive-slider {
+    background: url("../../public/image/TestDrive/backgrounds/testingdrive-slider-background-768.jpg");
+    @include backgroundProperties(#111111);
+    background-size: cover;
+    & > .container {
+      padding-left: 0;
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .background-about {
+    background-position: right 9% top 0;
+    background-color: #111111;
+  }
+
+  .background-testdrive-slider {
+    overflow: hidden;
+  }
+
+  .background-home-features {
+    background-size: auto 90%;
+    background: linear-gradient(308.96deg, #0D0D0D 7.46%, rgba(0, 0, 0, 0) 27.97%), linear-gradient(13.88deg, #0D0D0D 10.15%, rgba(9, 9, 9, 0.554623) 14.83%, rgba(0, 0, 0, 0) 25.53%), linear-gradient(174.64deg, #111111 4.2%, rgba(0, 0, 0, 0) 46.8%), linear-gradient(99.17deg, #111111 12.7%, rgba(17, 17, 17, 0) 29.48%), linear-gradient(0deg, rgba(4, 4, 4, 0.2), rgba(4, 4, 4, 0.2)), url("../../public/image/Home/HomeFeatures/HomeFeaturesBackground.jpg");
+    @include backgroundProperties(#111111);
+  }
+}

@@ -1,0 +1,129 @@
+.showrooms-diller {
+  &__title {
+    margin: 0 0 76px 0;
+    @include SFProFont(45px, 700);
+    line-height: 58.5px;
+  }
+
+  &__flex {
+    margin-bottom: 61px;;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__wrapper {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+
+    & > *:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 51px;
+    margin-right: 20px;
+  }
+  &__icon {
+    width: 19.5px;
+    height: 19.5px;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__city {
+    margin-right: 8px;
+    @include SFProFont(30px, 500);
+    line-height: 28px;
+  }
+  &__cities {
+    @include SFProFont(18px, 400);
+    line-height: 23.4px;
+    margin-bottom: 20px;
+    max-width: 394px;
+    &--white {
+      margin-top: 20px;
+      font-weight: 700;
+      color: $color-white;
+      margin-bottom: 8px;
+
+    }
+  }
+  &__shops {
+    & > *:last-child {
+      margin-bottom: 9px;
+    }
+  }
+  &__sub-city {
+    margin-bottom: 50px;
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .showrooms-diller {
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 40px;
+      line-height: 38.4px;
+    }
+
+    &__flex {
+      justify-content: flex-start;
+      margin-bottom: 30px;
+      & > *:last-child {
+        margin-left: 15px;
+      }
+    }
+
+    &__item {
+      margin-right: 40px;
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  .showrooms-diller {
+    &__title {
+      margin-bottom: 35px;
+    }
+
+    &__city {
+      font-size: 22px;
+      margin-right: 9px;
+      line-height: 28px;
+    }
+
+    &__item {
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+
+    &__flex {
+      & > *:last-child {
+        margin-left: 0;
+      }
+    }
+
+    &__cities {
+      font-size: 16px;
+      line-height: 20.8px;
+    }
+
+    &__shops {
+      & > *:last-child {
+        margin-bottom: 30px;
+      }
+    }
+    &__sub-city {
+      margin-bottom: 45px;
+    }
+  }
+}

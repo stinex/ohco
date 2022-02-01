@@ -1,0 +1,11 @@
+.content-swiper {
+  height: auto !important;
+
+  & > * {
+    height: 100vh !important;
+    & > * {
+      height: auto !important;
+    }
+  }
+
+}

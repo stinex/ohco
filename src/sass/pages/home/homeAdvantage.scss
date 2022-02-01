@@ -1,0 +1,419 @@
+.home-advantage {
+  &--active {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50px;
+  }
+
+  & > * {
+    margin-bottom: 100px;
+  }
+
+  &__item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  &__background-one {
+    background: url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage1-1920.jpg");
+    @include backgroundProperties(#111111);
+    height: 1080px;
+  }
+
+  &__background-two {
+    background: linear-gradient(198.55deg, #070707 6.87%, rgba(0, 0, 0, 0) 34.49%),
+    linear-gradient(96.88deg, #111111 -10.23%, rgba(17, 17, 17, 0) 26.17%),
+    linear-gradient(62.82deg, rgba(0, 0, 0, 0.7) 18.79%, rgba(0, 0, 0, 0) 61.17%),
+    linear-gradient(0deg, rgba(4, 4, 4, 0.2), rgba(4, 4, 4, 0.2)),
+    url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage2-1920.jpg");
+    @include backgroundProperties(#111111);
+    height: 1080px;
+
+    & > .container {
+      overflow: visible;
+    }
+
+  }
+
+  &__background-three {
+    background: url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage3-1920.jpg");
+    @include backgroundProperties(#111111);
+    height: 1080px;
+    background-size: auto 100%;
+  }
+
+  &__background-four {
+    background: url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage4-1920.jpg");
+    @include backgroundProperties(#111111);
+    height: 1080px;
+  }
+
+
+  &__text {
+    padding-top: 175px;
+    padding-left: 85px;
+    &--last {
+      padding-top: 185px;
+    }
+  }
+  &__number {
+    @include SFProFont(22px, 700);
+    line-height: 28px;
+    color: $color-gray;
+    margin-bottom: 24px;
+  }
+  &__title {
+    @include SFProFont(55px, 700);
+    line-height: 60.5px;
+    margin-bottom: 40px;
+  }
+  &__subtitle {
+    @include SFProFont(22px, 700);
+    line-height: 28px;
+    color: $color-gray;
+  }
+  &__img {
+    max-width: 787px;
+    max-height: 823px;
+    position: absolute;
+    top: 127px;
+    left: 427px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .home-advantage {
+    // padding: 0 39px;
+    &--active {
+      // max-width: 1272px;
+      //width: 100%;
+      //padding: 0 15px;
+      //margin: 0 auto;
+      //overflow: hidden;
+      //border-radius: 50px;
+    }
+
+    &__item {
+      position: static;
+    }
+
+    &__text {
+      padding-top: 95px;
+      padding-left: 0;
+      position: relative;
+      z-index: 100;
+    }
+    &__img {
+      top: auto;
+      bottom: 30px;
+      left: 437px;
+    }
+
+    &__background-two {
+      position: relative;
+    }
+
+    &__background-one {
+      background: linear-gradient(52.92deg, #000000 22.73%, rgba(17, 17, 17, 0) 37.92%),
+      url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage1-1920.jpg");
+      @include backgroundProperties(#111111);
+      height: 900px;
+      background-size: auto 102.5%;
+    }
+
+    &__background-two {
+      background: linear-gradient(96.88deg, #111111 -10.23%, rgba(17, 17, 17, 0) 26.17%),
+      linear-gradient(62.82deg, rgba(0, 0, 0, 0.4) 18.79%, rgba(0, 0, 0, 0) 61.17%),
+      linear-gradient(0deg, rgba(4, 4, 4, 0.2), rgba(4, 4, 4, 0.2)),
+      url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage2-1920.jpg");
+      @include backgroundProperties(#111111);
+      background-position: left top;
+      background-size: auto 100%;
+      height: 900px;
+    }
+
+    &__background-three {
+      background: url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage3-1920.jpg");
+      @include backgroundProperties(#111111);
+      background-size: auto 105%;
+      background-position: left -288px top 0;
+      background-repeat: no-repeat;
+      height: 900px;
+      position: relative;
+      &::after {
+        @include backgraundAfter();
+        background: linear-gradient(222.65deg, #070707 13.14%, rgba(7, 7, 7, 0) 60.73%), linear-gradient(265.28deg, #000000 11.72%, rgba(0, 0, 0, 0) 49.46%);
+        z-index: 10;
+        transform: scale(-1, 1);
+        border-radius: 50px;
+      }
+    }
+
+    &__background-four{
+      background:linear-gradient(157.54deg, #020202 21.86%, rgba(17, 17, 17, 0) 35.37%), linear-gradient(120.61deg, #111111 12.16%, rgba(17, 17, 17, 0) 50.07%),  url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage4-1920.jpg");
+      @include backgroundProperties(#111111);
+      height: 900px;
+      background-size: auto 106.5%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-advantage {
+    & > * {
+      margin-bottom: 80px;
+      height: 1015px;
+    }
+
+
+
+    & > *:first-child {
+      margin-bottom: 89px;
+    }
+
+    &__img {
+      position: static;
+      margin: 20px auto 0;
+      max-width: 630px;
+      padding: 0;
+    }
+
+    &__text {
+      padding: 80px 80px 0;
+    }
+    &__number {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 45px;
+      line-height: 50px;
+      margin-bottom: 35px;
+    }
+
+    &__background-one {
+      background: linear-gradient(137.61deg, #020202 3.02%, rgba(0, 0, 0, 0) 74.01%), linear-gradient(195.65deg, #110D0C 6.38%, rgba(17, 13, 12, 0) 23.89%), linear-gradient(89.15deg, #000000 -5.36%, rgba(17, 17, 17, 0) 68.13%),
+      url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage1-1920.jpg");
+      @include backgroundProperties(#111111);
+      height: 1024px;
+      background-size: auto 115%;
+      background-position: center bottom 0;
+    }
+
+
+    &__background-two {
+      background: linear-gradient(181.9deg, #020202 1.44%, rgba(0, 0, 0, 0) 52.17%), linear-gradient(117.73deg, #000000 19.63%, rgba(0, 0, 0, 0) 45.04%), linear-gradient(0deg, rgba(4, 4, 4, 0.2), rgba(4, 4, 4, 0.2)),
+      url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage2-1920.jpg");
+      @include backgroundProperties(#111111);
+      background-size: auto 100%;
+      //background-position: left top;
+      height: 1024px;
+    }
+
+    &__background-three {
+      background: url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage3-768.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      //background-size: cover;
+      height: 1024px;
+      //background-position: left -370px bottom;
+      &:after {
+        display: none;
+      }
+    }
+
+    &__background-four {
+      background: url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage4-768.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      //background-position: right bottom;
+      background-repeat: no-repeat;
+      &:after {
+        background: linear-gradient(157.54deg, #020202 21.86%, rgba(17, 17, 17, 0) 35.37%), linear-gradient(120.61deg, #111111 12.16%, rgba(17, 17, 17, 0) 50.07%);
+      }
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .home-advantage {
+    &__subtitle {
+      &--2 {
+        & > br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .home-advantage {
+    padding: 0 13px;
+    &-container {
+      padding: 0;
+    }
+
+    & > *:first-child {
+      margin-bottom: 40px;
+    }
+
+
+    & > * {
+      margin-bottom: 40px;
+      height: 600px;
+      padding: 0;
+    }
+
+    &__text {
+      padding: 30px 28px 0;
+      text-align: center;
+    }
+
+    &__number {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 7px;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 38.4px;
+      margin-bottom: 12px;
+      min-width: 300px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0 auto;
+      & > br {
+        display: none;
+      }
+      &--1 {
+        max-width: 261px;
+      }
+      &--2 {
+        max-width: 252px;
+      }
+      &--3 {
+        max-width: 287px;
+      }
+    }
+    &__img {
+      margin-top: 10px;
+      max-width: 330px;
+    }
+
+    &__375br {
+      display: block;
+    }
+
+
+    &__background-one {
+      //background: linear-gradient(137.61deg, #020202 3.02%, rgba(0, 0, 0, 0) 74.01%), linear-gradient(195.65deg, #110D0C 6.38%, rgba(17, 13, 12, 0) 23.89%), linear-gradient(89.15deg, #000000 -5.36%, rgba(17, 17, 17, 0) 68.13%),
+      //url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage1-1920.jpg");
+      //@include backgroundProperties(#111111);
+      //background-size: auto 115%;
+      //background-position: center bottom 0;
+      //background-size: auto 115%;
+      background: url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage1-375.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left top;
+      position: relative;
+      &:after {
+        @include backgraundAfter;
+        background: linear-gradient(141.81deg, #000000 9.57%, rgba(0, 0, 0, 0) 37.91%), linear-gradient(195.65deg, #000000 6.38%, rgba(17, 13, 12, 0) 23.89%);
+      }
+    }
+
+
+    &__background-three {
+      background: url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage3-375.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      &:after {
+        display: none;
+      }
+    }
+
+    &__background-two {
+      background: linear-gradient(198.55deg, #000000 6.87%, rgba(0, 0, 0, 0) 34.49%), linear-gradient(48.31deg, #000000 27.65%, rgba(0, 0, 0, 0) 88.33%), url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage2-1920.jpg");
+    }
+    &__background-four {
+      background: url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage4-375.jpg");
+      background-size: 100% 125%;
+      background-repeat: no-repeat;
+      background-position: left top -50px;
+      position: relative;
+      &::after {
+        @include backgraundAfter;
+        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 12.67%);
+        z-index: 2;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .home-advantage {
+    //&__background-four {
+    //  background: none;
+    //  position: relative;
+    //  &:after {
+    //    @include backgraundAfter();
+    //    background: url("../../../../public/image/Home/HomeAdvantage/HomeAdvantage4-768.jpg");
+    //    background-size: 100% 650px;
+    //    background-position: left top;
+    //  }
+    //}
+
+    &__background-one {
+      background-size: auto 106%;
+      background-position: top left;
+    }
+
+    &__background-four {
+      background-size: auto 110%;
+      background-position: left -15px top -30px;
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .home-advantage {
+    &__title {
+      min-width: auto;
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+  &__375br {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 340px) {
+  .home-advantage {
+    &__title {
+      font-size: 22px;
+      line-height: 24px;
+    }
+    &__subtitle {
+      font-size: 14px;
+      &--2 {
+        & > span {
+          display: none;
+        }
+      }
+    }
+  }
+}
