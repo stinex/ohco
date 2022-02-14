@@ -132,7 +132,7 @@ export const homeSlidesArr = [
     {
         name: 'orange',
         model: 'M.8 LE Saddle',
-        price: '1 100 000',
+        price: '1 350 000',
         src: '/image/Home/HomeSlider/HomeSliderOrange.png',
         src2: '/image/TestDrive/Slider/chair-slide2.png'
     },
