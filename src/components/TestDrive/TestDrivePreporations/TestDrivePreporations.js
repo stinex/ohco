@@ -3,6 +3,8 @@ import TestDrivePreporationsItem from "./TestDrivePreporationsItem";
 import SmartphoneIcon from "../../../UI/icon/TestDrive/SmartphoneIcon";
 import CentimetresIcon from "../../../UI/icon/TestDrive/CentimetresIcon";
 import ClockIcon from "../../../UI/icon/TestDrive/ClockIcon";
+import { useState } from 'react';
+import { ModalYoutibe } from '../../ModalYoutibe';
 
 export const testDrive = [
     {
@@ -30,10 +32,13 @@ export const testDrive = [
 
 const TestDrivePreporations = () => {
 
+
+    const [open, setOpen] = useState(false)
+
     return (
         <section className="testdrive-preparation">
             <h2 className='testdrive-preparation__title'>
-                Подготовка <span className='testdrive-preparation__br'/>
+                Подготовка <span className='testdrive-preparation__br' />
                 к тест-драйву
             </h2>
             <p className="testdrive-preparation__subtitle">
@@ -57,6 +62,20 @@ const TestDrivePreporations = () => {
                     subtitle={testDrive[2].subtitle}
                 />
             </div>
+
+            <div className="testdrive-video__wrapper">
+                <div className="block">
+                    <div className="title">Как мы проводим <br /> тест-драйв </div>
+                    <p className='description'>Демонстрируем, как проходит выездной тест-драйв массажного кресла OHCO M.8 прямо у вас дома</p>
+                </div>
+                <div className="block">
+                    <a onClick={() => setOpen(true)} className='video'>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+
+          {open && <ModalYoutibe active={open} setActive={setOpen} />}
         </section>
     );
 };
