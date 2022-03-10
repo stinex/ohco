@@ -125,28 +125,28 @@ export const homeSlidesArr = [
         name: 'white',
         model: 'M.8 Pearl',
         model2: '',
-        price: '1 100 000',
+        price: '1 452 000',
         src: '/image/Home/HomeSlider/HomeSliderWhite.png',
         src2: '/image/TestDrive/Slider/chair-slide1.png'
     },
     {
         name: 'orange',
         model: 'M.8 LE Saddle',
-        price: '1 350 000',
+        price: '1 782 000',
         src: '/image/Home/HomeSlider/HomeSliderOrange.png',
         src2: '/image/TestDrive/Slider/chair-slide2.png'
     },
     {
         name: 'brown',
         model: 'M.8 Walnut',
-        price: '1 100 000',
+        price: '1 452 000',
         src: '/image/Home/HomeSlider/HomeSliderBrown.png',
         src2: '/image/TestDrive/Slider/chair-slide4.png'
     },
     {
         name: 'black',
         model: 'M.8 Midnight',
-        price: '1 100 000',
+        price: '1 452 000',
         src: '/image/Home/HomeSlider/HomeSliderBlack.png',
         src2: '/image/TestDrive/Slider/chair-slide3.png'
     }
