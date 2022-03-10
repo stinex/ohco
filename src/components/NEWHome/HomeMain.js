@@ -51,6 +51,7 @@ const HomeMain = () => {
                     <div className='home-main__chair'>
                         <div className='home-main__name'>M.8 Pearl</div>
                         <div className='home-main__price'>1 452 000 ₽</div>
+
                     </div>
                 </div>
                 <div className='home-main__button home-main__button--mobile'>
