@@ -32,11 +32,11 @@ const HomeVideo = () => {
         <section className='home-video' onClick={handleClickSection}>
             {media1024 ? (
                 <video ref={ref} autoPlay muted={muted} loop className='home-video__wrapper'>
-                    <source src="./video/video2.mp4" type="video/mp4"/>
+                    <source src="./video/video1.mp4" type="video/mp4"/>
                 </video>
             ) : (
                 <video ref={ref} autoPlay muted={muted} loop className='home-video__wrapper'>
-                    <source src="./video/video1.mp4" type="video/mp4"/>
+                    <source src="./video/video2.mp4" type="video/mp4"/>
                 </video>
             )}
             {muted && (
