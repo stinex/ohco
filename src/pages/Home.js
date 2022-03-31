@@ -269,13 +269,13 @@ const Home = () => {
         {/*<ChangeContent/>*/}
         {/*<AnimationBlock scrollTo={scroll} maxContent={5}>*/}
         {/*</AnimationBlock>*/}
-        <ChangeContent
+        {/* <ChangeContent
           trigger='gsap-rest'
           endTrigger='home-video'
           handleChange={changeRest}
         >
           <HomeRest/>
-        </ChangeContent>
+        </ChangeContent> */}
         {/*<HomeRest/>*/}
         {/*<HomeRest/>*/}
         <HomeVideo/>
