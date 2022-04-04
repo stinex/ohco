@@ -57,6 +57,7 @@ const Home = () => {
         <HomeStone/>
         <section className='background-home-white'>
           <HomeSpace/>
+          
           <HomeComplex/>
         </section>
         <HomeDesigner/>
