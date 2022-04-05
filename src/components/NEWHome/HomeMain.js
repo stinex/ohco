@@ -50,7 +50,7 @@ const HomeMain = () => {
                     <img src='/image/Home/home-main-armchair.png' alt='ohco-chair'/>
                     <div className='home-main__chair'>
                         <div className='home-main__name'>M.8 Pearl</div>
-                        <div className='home-main__price'>1 452 000 ₽</div>
+                        <div className='home-main__price'>1 307 000 ₽</div>
 
                     </div>
                 </div>
