@@ -84,8 +84,8 @@ const FooterUrl = ({view920, view675}) => {
                             <div className='footer__call-icon'><CallIcon/></div>
                         )}
                         <div className='footer__call-info'>
-                            <a href='tel:88007001429' className='footer__call-number'>
-                                8 (800) 700 14 29
+                            <a href='tel:+7(800)600-98-58' className='footer__call-number'>
+                            8 (800) 600-98-58
                             </a>
                             <p className='footer__call-subtitle'>
                                 Звонок бесплатный по РФ

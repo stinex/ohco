@@ -34,7 +34,7 @@ const HeaderDrawerList = ({navArr, onClose}) => {
                             </li>
                         ))}
                     </ul>
-                    <a className='header__drawer-number' href='tel:88007001429'>8 (800) 700 14 29</a>
+                    <a className='header__drawer-number' href='tel:+7(800)600-98-58'>8 (800) 600-98-58</a>
                     <p className='header__drawer-order'>Звонок бесплатный по РФ</p>
                     <div className='header__drawer-button'>
                         <ButtonOutlinedUI onClick={() => setOpen(true)}>

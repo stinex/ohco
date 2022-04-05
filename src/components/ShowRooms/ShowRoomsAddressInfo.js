@@ -32,7 +32,7 @@ const ShowRoomsAddressInfo = () => {
                     <div className='address__call-icon'>
                         <ShowRoomsCallIcon/>
                     </div>
-                    <a href='tel:88007001429'>8 (800) 700-14-29</a>
+                    <a href='tel:+7(800)600-98-58'>8 (800) 600-98-58</a>
                 </div>
             </div>
         </div>
