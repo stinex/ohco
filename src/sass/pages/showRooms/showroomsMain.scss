@@ -45,6 +45,12 @@
     max-width: 1242px;
     max-height: 500px;
     height: 100%;
+
+    margin-bottom: 60px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+
   }
   &__img {
     border-radius: 50px;
@@ -62,6 +68,10 @@
     &__wrapper {
       margin-bottom: 82px;
       height: 300px;
+    }
+    &__wrapper{
+      margin-bottom: 100px;
+      border-radius: 20px;
     }
     &__img {
       border-radius: 20px;
@@ -88,4 +98,13 @@
   .showrooms-main {
     padding-top: 62px;
   }
+  .showrooms-map {
+    &__wrapper {
+      width: 100%;
+      height: 230px;
+      overflow: hidden;
+      margin-bottom: 60px;
+      background-position-y: -119px;
+      }
+    }
 }
